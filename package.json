@@ -76,6 +76,6 @@
     "redux-logger": "^2.1.4",
     "redux-router": "^1.0.0-beta5",
     "redux-thunk": "^1.0.0",
-    "superagent": "^1.4.0"
+    "superagent": "^3.8.1"
   }
 }
