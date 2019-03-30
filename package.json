@@ -16,7 +16,9 @@
     "clean": "rimraf dist/*",
     "release:major": "npm version major && npm publish && git push --follow-tags",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
-    "release:patch": "npm version patch && npm publish && git push --follow-tags"
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "",
   "keywords": [],
@@ -59,12 +61,12 @@
     "flux": "^2.1.1",
     "history": "^1.13.1",
     "isomorphic-fetch": "^2.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.11",
     "moment": "^2.11.0",
     "normalize.css": "^3.0.3",
     "object-assign": "^4.0.1",
     "purecss": "^0.6.0",
-    "radium": "^0.14.3",
+    "radium": "^0.16.0",
     "react": "^0.14.0",
     "react-addons-test-utils": "^0.14.0",
     "react-dom": "^0.14.0",
@@ -76,6 +78,8 @@
     "redux-logger": "^2.1.4",
     "redux-router": "^1.0.0-beta5",
     "redux-thunk": "^1.0.0",
-    "superagent": "^1.4.0"
-  }
+    "superagent": "^3.8.1",
+    "snyk": "^1.143.5"
+  },
+  "snyk": true
 }
